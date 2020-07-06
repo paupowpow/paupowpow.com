@@ -65,37 +65,25 @@ a:hover {
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: .5rem;
 	}
-}
 
-.image img {
-	width: 100%;
-	height: 100%;
-    object-fit: cover;
+	.gallery img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
-
 
 //
 // Image Detail Page
 //
 
-@media screen and (min-width: 700px) {
-	.section-controls {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-	}
-
-	.controls {
-	}
-
-	.instructions {
-		font-style: italic;
-		text-align: right;
-	}
+.instructions {
+	font-style: italic;
 }
 
-.galleryspot {
-	margin: 1rem 0;
+.imagecanvas {
+	margin: 1rem auto;
+	border: 1px solid rgba(0,0,0,.1);
 }
 
 
