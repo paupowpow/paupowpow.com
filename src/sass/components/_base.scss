@@ -5,7 +5,7 @@
 body {
 	font-size: 125%;
 	margin: 0 auto;
-	max-width: 1040px;
+	max-width: 940px;
 	width: 92%;
 	font-family: Arial, sans-serif;
 	margin-top: 3rem;
@@ -30,9 +30,19 @@ a:hover {
 	text-decoration: line-through;
 }
 
+
 .title {
 	font-size: 100%;
 	font-weight: normal;
+}
+
+//
+// Header
+//
+
+
+.header {
+	margin-bottom: 1rem;
 }
 
 //
@@ -43,7 +53,7 @@ a:hover {
 	.about {
 		display: flex;
 		flex-direction: row;
-		margin-bottom: 3rem;
+		margin-top: 1rem;
 	}
 
 	.intro {
@@ -74,16 +84,16 @@ a:hover {
 }
 
 //
-// Image Detail Page
+// Gallery Item Page
 //
-
-.instructions {
-	font-style: italic;
-}
 
 .imagecanvas {
 	margin: 1rem auto;
 	border: 1px solid rgba(0,0,0,.1);
 }
 
+
+.controls {
+	float: right;
+}
 

@@ -1,10 +1,28 @@
-var canvas = document.getElementById('imagecanvas1');
+var canvas = document.getElementsByClassName('imagecanvas')[0];
 canvas.width = 0;
 canvas.height = 0;
 
 var kidpixImage = new Image();
-kidpixImage.src = '/img/kidpix00375.png';
 
+var imageID = canvas.id;
+
+switch(imageID) {
+	case 'imagecanvas1':
+		kidpixImage.src = '/img/kidpix00375.png';
+		break;
+	case 'imagecanvas2':
+		kidpixImage.src = '/img/kidpix00384.png';
+		break;
+	case 'imagecanvas3':
+		kidpixImage.src = '/img/kidpix00404.png';
+		break;
+	case 'imagecanvas4':
+		kidpixImage.src = '/img/kidpix00416.png';
+		break;
+	case 'default':
+		kidpixImage.src = '/img/kidpix00375.png';
+		break;
+}
 
 window.onload = function(){ // image has loaded
 
