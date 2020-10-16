@@ -19,8 +19,23 @@ switch(imageID) {
 	case 'imagecanvas4':
 		kidpixImage.src = '/img/kidpix00416.png';
 		break;
+	case 'imagecanvas5':
+		kidpixImage.src = '/img/kidpix00988.png';
+		break;
+	case 'imagecanvas6':
+		kidpixImage.src = '/img/kidpix00966.png';
+		break;
+	case 'imagecanvas7':
+		kidpixImage.src = '/img/kidpix00968.png';
+		break;
+	case 'imagecanvas8':
+		kidpixImage.src = '/img/kidpix00962.png';
+		break;
+	case 'imagecanvas9':
+		kidpixImage.src = '/img/kidpix00913.png';
+		break;
 	case 'default':
-		kidpixImage.src = '/img/kidpix00375.png';
+		kidpixImage.src = '/img/kidpix00968.png';
 		break;
 }
 
