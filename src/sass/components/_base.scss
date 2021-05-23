@@ -3,7 +3,7 @@
  */
 
 body {
-	font-size: 125%;
+	font-size: 1rem;
 	margin: 0 auto;
 	max-width: 940px;
 	width: 92%;
@@ -24,10 +24,12 @@ a:hover,
 a:active,
 a:visited {
 	color: #000;
+	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: line-through;
+	color: rgba(0,0,0,0.5);
+	text-decoration: none;
 }
 
 
@@ -39,10 +41,10 @@ a:hover {
 //
 // Header
 //
-
-
 .header {
-	margin-bottom: 2rem;
+	display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 //
@@ -53,16 +55,18 @@ a:hover {
 	.about {
 		display: flex;
 		flex-direction: row;
-		margin-top: 1rem;
 	}
 
 	.intro {
 		flex: 2 2;
+		padding-right: 0.5rem;
 	}
 
-	.social {
+	.side {
 		flex: 1 1;
+		padding-left: 0.5rem;
 	}
+
 }
 
 //
@@ -92,12 +96,6 @@ a:hover {
 //
 
 .imagecanvas {
-	margin: 1rem auto;
+	// margin: 1rem auto;
 	border: 1px solid rgba(0,0,0,.1);
 }
-
-
-.controls {
-	float: right;
-}
-
