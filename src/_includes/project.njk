@@ -31,26 +31,31 @@
 	<link href="{{ '/style.css' | url }}" rel="stylesheet" type="text/css" media="all">
 	
 </head>
-<body class="project" id="live">
+<body class="project">
 	
 	{% include "headernav.njk" %}
 
-	
-	<main id="content">
+	<main id="content" id="top">
 		<h2>{{ title }}</h2>
 		<p>{{ projectDate }}</p>
 
-			{{ content | safe }}
+		{{ content | safe }}
 
 		<h3>overview</h3>
-		<div class="overview" id="top">
+		<div class="overview">
 			<!-- TODO include all images from each project's image folder here -->
-			<a title="VIEW IMAGE" href="#03399"><img src="/images/kidpix/kidpix03399.png"></a>
+			{% for image in collections.images %}
+				<a href="#{{ image.id }}"><img src="{{ image.path }}"></a>
+			{% endfor %}
+			<!-- <a title="VIEW IMAGE" href="#03399"><img src="/images/kidpix/kidpix03399.png"></a> -->
 		</div>
 
 		<h3>gallery</h3>
 		<div class="gallery kidpix-gallery">
-			<a title="BACK TO TOP" href="#top"><img id='03399' src="/assets/kidpix/kidpix03399.png"></a>
+			{% for image in collections.images %}
+				<a href="#top"><img id='{{ image.id }}' src="{{ image.path }}"></a>
+			{% endfor %}
+			<!-- <a title="BACK TO TOP" href="#top"><img id='03399' src="/images/kidpix/kidpix03399.png"></a> -->
 		</div>
 	</main>
 

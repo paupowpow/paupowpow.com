@@ -29,16 +29,20 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/*.css");
 
   eleventyConfig.addCollection('images', async collectionApi => {
-    let files = await glob('./src/images/kidpix/*.png');
-    // console.log(files)
+    let files = await glob('src/images/kidpix/*.png');
+    debugger
+    //Now filter to non thumb-
+    let images = files.filter(f => {
+      return f.indexOf('src/images/kidpix/thumb-') !== 0;
+    });
 
-    let collection = files.map(imagePath => {
+    let collection = images.map(i => {
       return {
-        path: imagePath.replace('./src',''),
-        id: imagePath.replace('./src/images/kidpix/', '')
+        path: i,
+        thumbpath: i.replace('src/images/kidpix/', 'src/images/kidpix/thumb-')
       }
     });
-    // console.log(collection)
+
     return collection;
 
   });
