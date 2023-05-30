@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="_,.-'~'-.,_kid pix art & other stuff_,.-'~'-.,_">
+	<meta name="keywords" content="">
+	<meta name="author" content="paupowpow">
+
+	<!--  Essential META Tags -->
+	<meta property="og:title" content="paupowpow">
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://paupowpow.neocities.org/images/kidpix/kidpix02807.png">
+	<meta property="og:url" content="https://paupowpow.neocities.org/">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!--  Non-Essential, But Recommended -->
+	<meta property="og:description" content="_,.-'~'-.,_kid pix art & other stuff_,.-'~'-.,_">
+	<meta property="og:site_name" content="paupowpow">
+	<meta name="twitter:image:alt" content="kidpix02807.png">
+
+	<link rel="icon" href="/images/favicon/favicon.ico">
+	<link rel="mask-icon" href="/images/favicon/mask-icon.svg" color="#000000">
+	<link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+		
+	<title>{{ title }} by paupowpow</title>
+
+	<link href="{{ '/fonts.css' | url }}" rel="stylesheet" type="text/css" media="all">
+	<link href="{{ '/style.css' | url }}" rel="stylesheet" type="text/css" media="all">
+	
+</head>
+<body class="project" id="live">
+	
+	{% include "headernav.njk" %}
+
+	
+	<main id="content">
+		<h2>{{ title }}</h2>
+		<p>{{ projectDate }}</p>
+
+			{{ content | safe }}
+
+		<h3>overview</h3>
+		<div class="overview" id="top">
+			
+			<!-- TODO include all images from each project's image folder here -->
+			<a title="VIEW IMAGE" href="#03399"><img src="/images/kidpix/kidpix03399.png"></a>			
+		<h3>gallery</h3>
+	</main>
+
+	 	{% include "footer.njk" %}
+	</div>
+</body>
+</html>

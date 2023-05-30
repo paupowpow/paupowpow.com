@@ -1,0 +1,73 @@
+/* Avara */
+
+@font-face {
+	font-family: 'Avara';
+	src: url('fonts/avara-black-webfont.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avara';
+	src: url('fonts/avara-bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avara';
+	src: url('fonts/avara-bolditalic-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Libre Franklin */
+
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-extralightitalic-webfont.woff2') format('woff2');
+	font-weight: 200;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-extralight-webfont.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-semibolditalic-webfont.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-semibold-webfont.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-bold-webfont.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-bolditalic-webfont.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-extrabold-webfont.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('fonts/librefranklin-extrabolditalic-webfont.woff2') format('woff2'),
+	font-weight: 800;
+	font-style: italic;
+}

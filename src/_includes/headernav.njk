@@ -1,0 +1,24 @@
+<header>
+	<h1><a class="headerlink" href="{{ '/' | url }}">paupowpow</a></h1>
+</header>
+
+<nav>
+	<div class="navsection">
+		<span class="title">Art</span>
+		{%- for project in collections.artProjects %}
+			<a href="{{ project.page.url }}">{{ project.data.title }}</a>
+		{%- endfor -%}
+		<a href='./kidpix.html'>kid pix</a>
+		<a href='./glitchmachine.html'>glitchmachine</a>
+		<a href='./kaleidoscope.html'>kaleidoscope</a>
+		<a href="./chromecuties.html">chromecuties</a>
+		<a href="./doodles.html">doodles</a>
+	</div>
+	<div class="navsection">
+		<span class="title">Other</span>
+
+		{%- for project in collections.otherPages %}
+			<a href="{{ project.page.url }}">{{ project.data.title }}</a>
+		{%- endfor -%}
+	</div>
+</nav>

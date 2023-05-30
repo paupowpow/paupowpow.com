@@ -1,0 +1,398 @@
+@font-face {
+		font-family: 'dejavu_sans_mono';
+		src: url('fonts/dejavusansmono-webfont.woff2') format('woff2'),
+				 url('fonts/dejavusansmono-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+@font-face {
+		font-family: 'dejavu_sans_mono';
+		src: url('fonts/dejavusansmono-bold-webfont.woff2') format('woff2'),
+				 url('fonts/dejavusansmono-bold-webfont.woff') format('woff');
+		font-weight: bold;
+		font-style: normal;
+
+}
+
+@font-face {
+		font-family: 'dejavu_sans_mono';
+		src: url('fonts/dejavusansmono-boldoblique-webfont.woff2') format('woff2'),
+				 url('fonts/dejavusansmono-boldoblique-webfont.woff') format('woff');
+		font-weight: bold;
+		font-style: oblique;
+
+}
+
+@font-face {
+		font-family: 'dejavu_sans_mono';
+		src: url('fonts/dejavusansmono-oblique-webfont.woff2') format('woff2'),
+				 url('fonts/dejavusansmono-oblique-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: oblique;
+}
+
+@font-face {
+		font-family: 'ft88bold';
+		src: url('/fonts/ft88-bold-webfont.woff2') format('woff2'),
+				 url('/fonts/ft88-bold-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+
+@font-face {
+		font-family: 'ft88expanded';
+		src: url('/fonts/ft88-expanded-webfont.woff2') format('woff2'),
+				 url('/fonts/ft88-expanded-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+
+@font-face {
+		font-family: 'ft88gothique';
+		src: url('/fonts/ft88-gothique-webfont.woff2') format('woff2'),
+				 url('/fonts/ft88-gothique-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+
+@font-face {
+		font-family: 'ft88italic';
+		src: url('/fonts/ft88-italic-webfont.woff2') format('woff2'),
+				 url('/fonts/ft88-italic-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+
+@font-face {
+		font-family: 'ft88regular';
+		src: url('/fonts/ft88-regular-webfont.woff2') format('woff2'),
+				 url('/fonts/ft88-regular-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+
+@font-face {
+		font-family: 'ft88school';
+		src: url('/fonts/ft88-school-webfont.woff2') format('woff2'),
+				 url('/fonts/ft88-school-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+
+@font-face {
+		font-family: 'ft88serif';
+		src: url('/fonts/ft88-serif-webfont.woff2') format('woff2'),
+				 url('/fonts/ft88-serif-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+:root {
+  --background: #ffffff;
+  --text: #000000;
+  --primary: #0000ff;
+  --secondary: #00ff00;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--text);
+	/*height: 100vh;*/
+	width: 100vw;
+	font-family: 'dejavu_sans_mono', 'Courier New', monospace;
+	font-size: 16px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+header {
+	padding: 0.5em 1em;
+	position: sticky;
+	top: 0px;
+	background-color: var(--background);
+}
+
+main {
+	overflow-y: auto;
+	padding: 1em;
+}
+
+nav {
+	overflow-y: auto;
+	padding: 0.5em 1em 1em;
+}
+
+h1, h2 {
+	font-family: 'ft88italic';
+}
+
+h3 {
+	font-family: 'ft88regular';
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+}
+
+a, a:visited {
+	color: var(--primary);
+}
+
+hr {
+  color: var(--background);
+  margin: 32px 0;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.navsection {
+  display: inline-block;
+}
+
+.navsection .title {
+	font-size: 10px;
+	font-family: 'ft88regular';
+}
+
+nav a {
+	font-family: 'ft88italic';
+	text-transform:  uppercase;
+	margin: 1rem 0he;
+	display: block;
+}
+
+nav p,
+nav a {
+	display: inline;
+	margin-right: 10px;
+}
+
+nav a,
+nav a:visited {
+	color: var(--text);
+}
+
+nav a:hover {
+	color: var(--primary);
+}
+
+nav a:active,
+nav a.current {
+	color: var(--text);
+	text-decoration: none;
+}
+
+.headerlink {
+	color: var(--text) !important;
+	text-decoration: none;
+	/*font-size: 84px;*/
+}
+
+.start-image {
+	width: 100%;
+	max-width: unset;
+}
+
+.featured p {
+  text-align: center;
+  font-size: 10px;
+	font-family: 'ft88regular';
+}
+
+.nav-image {
+	margin: 50px auto;
+	display: block;
+}
+
+
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-2 {
+  padding-right: 10px;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.column-4 {
+  padding-right: 10px;
+  flex-grow: 1;
+  width: 25%;
+}
+
+.show-on-small {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .headerlink  {  
+    font-size: 40px;
+  }
+  
+  .columns {
+    flex-direction: column;  
+  }
+  
+  .column-2,
+  .column-4 {
+    width: 100%;
+  }
+  
+  .show-on-small {
+		display: block;
+	}
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.hide-on-small {
+		display: none;
+	}
+	
+	.show-on-small {
+		display: block;
+	}
+}
+
+.terminal {
+	color: red;
+}
+
+/*  */
+/* GALLERY */
+/*  */
+
+.overview {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0px;
+  column-gap: 5px;
+}
+
+.overview a {
+  margin: auto;
+  cursor: zoom-in;
+}
+
+.overview img {
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+ul.about_projects img,
+.overview img {
+	image-rendering: auto;
+	object-fit: cover;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gallery a {
+  cursor: zoom-out;
+}
+
+.gallery img {
+	max-height: 95vh;
+	max-width: 100%;
+	/*padding-bottom: 100px;*/
+	padding: 4rem 0;
+}
+
+.start-image {
+	width: 100%;  
+	max-width: unset;
+}
+
+.start-image,
+.kidpix-gallery img {
+  image-rendering: pixelated;
+}
+
+@media screen and (min-width: 600px){
+  .overview {
+    grid-template-columns: repeat(8, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+  }
+	.gallery img {
+		padding-top: 20px;
+		padding-bottom: 80px;
+	}
+}
+
+ul.about_projects {
+	list-style-type: disclosure-closed;
+}
+
+ul.about_projects li {
+	margin: 8px 0px;
+}
+
+/*  */
+/* PAGE: ASCII-LAB */
+/*  */
+
+.ascii-lab pre {
+	margin-bottom: 100px;
+	line-height: 1;
+}
+
+/*  */
+/* PAGE: INDEX */
+/*  */
+
+
+.link-footer .column-4 {
+  text-align: center;
+}
+
+.link-footer .yw-widget-full:not(.yw-raw) .yw-content {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 800px) {
+  .link-footer .yw-widget-full:not(.yw-raw) {
+    margin: 0 auto !important;
+  }
+}
+
+/**/
+/* CANVAS */
+/**/
+
+#canvas-container {
+  width: 100%;
+  text-align: center;  
+}
+
+canvas {
+   display: inline;
+}
