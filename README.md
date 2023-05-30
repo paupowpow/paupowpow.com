@@ -1,4 +1,4 @@
-# HOW TO RUN + BUILD
+# How to...
 
 ## serve
 node_modules/.bin/eleventy --serve --input=src
@@ -7,7 +7,7 @@ node_modules/.bin/eleventy --serve --input=src
 node_modules/.bin/eleventy --input=src
 
 
-# NOTES
+# Notes
 
 ## direnv
 allows config for different projects
