@@ -28,18 +28,28 @@ module.exports = function(eleventyConfig) {
   // Copy css files to `_site/css`
   eleventyConfig.addPassthroughCopy("src/*.css");
 
-  eleventyConfig.addCollection('images', async collectionApi => {
-    let files = await glob('./src/images/kidpix/*.png');
-    // console.log(files)
-
+  eleventyConfig.addCollection('projectImages', async collectionApi => {
+    let files = await glob('./src/images/projects/*/*.{png,jpeg,jpg}');
+    
     let collection = files.map(imagePath => {
       return {
         path: imagePath.replace('./src',''),
-        id: imagePath.replace('./src/images/kidpix/', '')
+        id: imagePath.replace('./src/images/projects/*/', '')
       }
     });
-    // console.log(collection)
-    return collection;
 
+    let collectionByFolder = {}
+
+    // takes the entire list of image paths and splits it up by project
+    for (let element of collection) {
+      const segments = element.path.split('/')
+      // get the /*/ part of projects/*/*.png
+      const imageFolder = segments[segments.length - 2]
+      // if no array exists, make one
+      collectionByFolder[imageFolder] = collectionByFolder[imageFolder] || []
+      collectionByFolder[imageFolder].push(element) 
+    }
+
+    return collectionByFolder;
   });
 };

@@ -84,25 +84,6 @@
 			</div>
 		</div>
 	</main>
-
-	<div class="projects cards-grid">
-		{%- for project in collections.artProjects %}
-		<article class="card">
-			<a href="{{ project.page.url }}">
-				<div class="card-image">
-					<img src="{{ project.data.cover.src }}" alt="{{ project.data.cover.alt }}">
-				</div>
-				<div class="card-content">
-					<span class="tag"> <small>{{ project.data.type }}</small></span>
-					<h3>{{ project.data.title }}</h3>
-					<p>
-						{{ project.data.summary }}
-					</p>
-				</div>
-			</a>
-		</article>
-		{%- endfor -%}
-	</div>
 	 	
 	{% include "footer.njk" %}
 </body>
