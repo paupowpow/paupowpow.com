@@ -37,29 +37,28 @@
 
 	<main id="content" id="top">
 		<h2>{{ title }}</h2>
-		<p>{{ projectDate }}</p>
 
 		{{ content | safe }}
 
-		<h3>overview</h3>
-		<div class="overview">
-			<!-- TODO include all images from each project's image folder here -->
-			{% for image in collections.projectImages[imageFolder] %}
-				<a href="#{{ image.id }}"><img src="{{ image.path }}"></a>
-			{% endfor %}
-			<!-- <a title="VIEW IMAGE" href="#03399"><img src="/images/kidpix/kidpix03399.png"></a> -->
+		<div class="section">
+			<h3>overview</h3>
+			<div class="overview">
+				{% for image in collections.projectImages[imageFolder] %}
+					<a href="#{{ image.id }}"><img src="{{ image.path }}"></a>
+				{% endfor %}
+			</div>
 		</div>
 
-		<h3>gallery</h3>
-		<div class="gallery kidpix-gallery">
-			{% for image in collections.projectImages[imageFolder] %}
-				<a href="#top"><img id='{{ image.id }}' src="{{ image.path }}"></a>
-			{% endfor %}
-			<!-- <a title="BACK TO TOP" href="#top"><img id='03399' src="/images/kidpix/kidpix03399.png"></a> -->
+		<div class="section">
+			<h3>gallery</h3>
+			<div class="gallery kidpix-gallery">
+				{% for image in collections.projectImages[imageFolder] %}
+					<a href="#top"><img id='{{ image.id }}' src="{{ image.path }}"></a>
+				{% endfor %}
+			</div>
 		</div>
 	</main>
 
-	 	{% include "footer.njk" %}
-	</div>
+	{% include "footer.njk" %}
 </body>
 </html>

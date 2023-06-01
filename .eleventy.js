@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
     })
   })
 
-  eleventyConfig.addCollection("otherPages", function (collectionApi) {
+  eleventyConfig.addCollection("otherProjects", function (collectionApi) {
     return collectionApi.getFilteredByTag("other").sort(function (projectA, projectB) {
       // sort projects by weight (highest first)
       return projectB.data.weight - projectA.data.weight
